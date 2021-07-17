@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机排序</title>
+</head>
+<body>
+<script>
+    var arr=[1,2,3,4,5,6,7,8,9];
+    function shuffle(arr) {
+
+        var i = arr.length, t, j;
+
+        while (i) {
+
+            j = Math.floor(Math.random() * i--);
+
+            t = arr[i];
+
+            arr[i] = arr[j];
+
+            arr[j] = t;
+
+        }
+    return arr;
+    }
+
+    console.log(shuffle(arr))
+</script>
+</body>
+</html>
